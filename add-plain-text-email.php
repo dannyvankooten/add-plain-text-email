@@ -74,7 +74,7 @@ class APTE {
 		// replace certain elements with a line-break
 		$text = preg_replace(
 			array(
-				'@</?((div)|(h[1-9])|(tr)|(p)|(pre))@iu'
+				'@</?((div)|(h[1-9])|(/tr)|(p)|(pre))@iu'
 			),
 			"\n\$0",
 			$text );
@@ -82,14 +82,17 @@ class APTE {
 		// replace other elements with a space
 		$text = preg_replace(
 			array(
-				'@</?((td)|(th))@iu'
+				'@</((td)|(th))@iu'
 			),
 			" \$0",
 			$text );
 
 		// strip all remaining HTML tags
 	    $text = strip_tags( $text );
-		
+
+		// trim text
+		$text = trim( $text );
+
 		return $text;
 	}
 
