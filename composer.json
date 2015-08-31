@@ -1,0 +1,17 @@
+{
+    "name": "dvk/add-plain-text-email",
+    "description": "Adds a plain text email to your HTML emails.",
+    "require": {
+        "soundasleep/html2text": "^0.2.3"
+    },
+    "license": "GPL2",
+    "authors": [
+        {
+            "name": "Danny van Kooten",
+            "email": "hi@dvk.co"
+        }
+    ],
+    "autoload": {
+      "classmap": [ "src/" ]
+    }
+}
