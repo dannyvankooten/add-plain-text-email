@@ -61,8 +61,6 @@ class APTE {
 	            '@<script[^>]*?.*?</script>@siu',
 	            '@<object[^>]*?.*?</object>@siu',
 	            '@<embed[^>]*?.*?</embed>@siu',
-	            '@<applet[^>]*?.*?</applet>@siu',
-	            '@<noframes[^>]*?.*?</noframes>@siu',
 	            '@<noscript[^>]*?.*?</noscript>@siu',
 	            '@<noembed[^>]*?.*?</noembed>@siu',
 		        '@\t+@siu',
