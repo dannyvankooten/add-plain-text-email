@@ -3,7 +3,7 @@
 Plugin Name: Add Plain Text Email
 Plugin URI: http://dannyvankooten.com/wordpress-plugins/mailchimp-for-wordpress/
 Description: Adds a text/plain email to text/html emails to decrease the chance of emails being tagged as spam.
-Version: 1.1.1
+Version: 1.1.2
 Author: Danny van Kooten
 Author URI: http://dannyvanKooten.com
 */
@@ -42,7 +42,6 @@ class APTE {
 
 		// set AltBody
 		$text_message = $this->strip_html_tags( $phpmailer->Body );
-		var_dump( $text_message ); die();
 		$phpmailer->AltBody = $text_message;
 		$this->previous_altbody = $text_message;
 	}

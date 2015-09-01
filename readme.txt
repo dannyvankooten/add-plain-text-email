@@ -4,7 +4,7 @@ Donate link: https://dannyvankooten.com/donate/
 Tags: email, text email, html email, spam, spamassassin
 Requires at least: 3.1
 Tested up to: 4.3
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,6 +56,10 @@ http://spamscorechecker.com/
 http://www.port25.com/support/authentication-center/email-verification/
 
 == Changelog ==
+
+= 1.1.2 - September 1, 2015 =
+
+Remove faulty debugging statement.
 
 = 1.1.1 - August 31, 2015 =
 
